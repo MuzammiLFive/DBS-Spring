@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id="PC" class="System1">
+   	<property name="cpu" ref="processor"/>
+   	<property name="name" value="AMD 2700x"/>
+   	<property name="gpu" value="Nvidia 3090"/>
+   	<property name="ram" value="16"/>
+   	<property name="motherboard" value="B 450"/>
+   </bean>
+   
+   <bean id="processor" class="Processor">
+   	<property name="architecture" value="ARM x64"/>
+   	<property name="model" value="2000 series"/>
+   	<property name="size" value="10"/>
+   </bean>
+   
+ </beans>
